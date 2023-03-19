@@ -10,5 +10,18 @@
 
 .modal_container{
     margin: auto;
-    max-width: 600px;
+    max-width: 20rem;
+    min-height:70% ;
+    background-color: greenyellow;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.modal_cerrar{
+    cursor: pointer;
+    padding: 0.2rem 1rem;
 }
