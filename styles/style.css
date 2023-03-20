@@ -128,6 +128,11 @@ body{
 .header_btn_access{
     padding: 0.3rem 1.5rem;
 }
+.header_btn_access:hover{
+    background-color: rgba(3, 89, 163, 0);
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
 
 /* -----------------section: front----------- */
 .front{
@@ -262,7 +267,7 @@ body{
     background-image: url(/images/cards/card_black.png);
     background-size:contain;
     background-repeat: no-repeat;
-    transform: rotate(4deg);
+    transform: rotate(3deg);
     border-radius: 0.2rem;
 }
 
@@ -449,5 +454,10 @@ body{
     }
     .screen_content_bottom_p{
         order: 1;
+    }
+ }
+ @media (max-width: 400px) {
+    .card{
+        transform: rotate(0deg);
     }
  }

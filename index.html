@@ -27,10 +27,10 @@
          <nav class="nav">
             <ul class="nav_list style_ul">
                <li class="nav_items "><a class="style_a" href="#">READCARDS</a></li>
-               <li class="nav_items "><a class="style_a" href="#">SPEAKCARDS</a></li>
+               <li class="nav_items" id="speakcards_modal"><a class="style_a" href="#">SPEAKCARDS</a></li>
             </ul>
          </nav>
-         <a href="" class="header_btn_access style_a btn_white">Access</a>
+         <a href="#" class="header_btn_access style_a btn_white modal_open">Access</a>
       </header>
       <!-- -------------------main----------- -->
       <main class="main">
@@ -58,13 +58,13 @@
                   </div>
                   <div class="method_content_two">
                      <h3>READCARDS</h3>
-                     <p>Accede a las freecards sin registrarte, textos cortos y con un diseño didactico.</p>
+                     <p>Accede al modo READCARDS sin registrarte, textos cortos y con un diseño didactico.</p>
                      <a href="#" class="style_a btn_blue">GO</a>
                   </div>
                   <div class="method_content_three">
                      <h3>SPEAKCARDS</h3>
-                     <p>Accede a la pronunciación (speak) y traducción al español con las speakcards, registrandote o accediendo de forma segura.</p>
-                     <a href="#" class="style_a btn_blue">GO</a>
+                     <p>Ingresa al modo SPEAKCARDS, pronunciación (speak) y traducción al español de forma gratuita, registrandote o accediendo de forma segura con tu cuenta de Google.</p>
+                     <a href="#" class="style_a btn_blue" id="go_modal">GO</a>
                   </div>
                   <div class="method_content_card">
                      <div class="card"></div>
@@ -125,9 +125,14 @@
       </footer>
       <section class="modal">
          <div class="modal_container">
-            <h2>Soy un modal</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et reprehenderit cum quisquam assumenda odio repellendus quos simi</p>
-            <button class="modal_cerrar">cerrar</button>
+            <h2>Inicia Sesión y accede a las SPEAKCARDS</h2>
+            <button class="modal_google">
+               <div class="bg-white">
+                  <img src="/images/icons/icons8-logo-de-google.svg" alt="icono de google">
+               </div>
+               <div>Iniciar sesión con Google</div>
+            </button>
+            <a href="#" class="modal_close">cerrar</a>
          </div>
       </section>
    </div>
