@@ -137,7 +137,7 @@ body{
 /* -----------------section: front----------- */
 .front{
     height: 92vh;
-    background-color: aqua;
+   /*  background-color: aqua; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(auto,1fr) minmax(auto,0.5fr);
@@ -183,7 +183,7 @@ body{
     height: 100%;
     min-width: 100%;
     max-width: 100vw;
-    background-color: rgb(152, 190, 224);
+    /* background-color: rgb(152, 190, 224); */
     display: flex;
     justify-content: center;
     align-items:  center;
@@ -192,7 +192,7 @@ body{
 .method_content{
     min-width: 44rem;
     max-width: 80%;
-    background-color: rgb(152, 224, 156);
+    /* background-color: rgb(152, 224, 156); */
     display: grid;
     grid-template-columns: minmax(11rem,1fr) minmax(11rem,1fr) minmax(17.7rem,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -233,7 +233,7 @@ body{
 
 .method_content_one{
     grid-area: contentOne;
-    background-color: rgb(138, 138, 167);
+    /* background-color: rgb(138, 138, 167); */
 }
 
 .method_content_two{
@@ -246,7 +246,7 @@ body{
 
 
 .method_content_card{
-    background-color: aqua;
+    /* background-color: aqua; */
     grid-area: contentCard;
     display: flex;
     justify-content: center;
@@ -261,10 +261,10 @@ body{
     padding: 1rem;
     
 } */
-.card{
+.method_card{
     height: 20rem;
     width: 15rem;
-    background-image: url(/images/cards/card_black.png);
+    background-image: url(/images/cards/rock.png);
     background-size:contain;
     background-repeat: no-repeat;
     transform: rotate(3deg);
@@ -284,7 +284,7 @@ body{
     height: 100%;
     min-width: 100%;
     max-width: 100vw;
-    background-color: rgb(152, 190, 224);
+    /* background-color: rgb(152, 190, 224); */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -301,7 +301,7 @@ body{
 .screen_content{
     min-width: 17.7rem;
     max-width: 80%;
-    border: 1px solid rgb(0, 242, 255);
+    /* border: 1px solid rgb(0, 242, 255); */
     font-weight: 400;
 
 }
@@ -312,7 +312,7 @@ body{
     flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(21, 255, 0);
+    /* border: 1px solid rgb(21, 255, 0); */
     /* padding: 2rem; */
     
 }
@@ -329,7 +329,7 @@ body{
 }
 .screen_content_bottom_img,
 .screen_content_top_img{
-    background-color: bisque;
+   /*  background-color: bisque; */
     max-width: 30%; 
     min-width: 17.7rem;
     /* height: 17.7rem; */
@@ -348,7 +348,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(255, 0, 166);
+    /* border: 1px solid rgb(255, 0, 166); */
     /* padding: 2rem; */
 }
 

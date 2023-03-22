@@ -1,3 +1,4 @@
+/* import './googleLogin.js' */
 //-------------FORMA UNO---------------
 /* let btnAccess = document.querySelector(".header_btn_access");
 let modal = document.querySelector(".modal");
