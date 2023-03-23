@@ -18,17 +18,19 @@
          <h2>Creador</h2>
          <form action="#" class="form" id="form">
             <label for="imageCard">Carga la imagen para la card:</label>
-            <input type="file"  name="imageCard" id="imageCard">
+            <input type="file" name="imageCard" id="imageCard">
             <label for="titleCard">Ingresa el título de la card:</label>
             <input type="text" name="titleCard" id="titleCard" class="input-desing">
-            <label for="paragraphCard">Ingresa el contenido de la card:</label>
-            <textarea id="paragraphCard" name="paragraphCard" rows="4" cols="50"></textarea>
+            <label for="textareaCard">Ingresa el contenido de la card:</label>
+            <textarea id="textareaCard" name="textareaCard" rows="4" cols="50"></textarea>
             <div class="form_marker">
                <label for="wordsCard">Ingresa la palabra o frase a resaltar:</label>
                <fieldset>
                   <input type="text" name="wordsCard" id="wordsCard" class="input-desing">
+                  <label for="TraductionWord"></label>
+                  <input type="text" name="TraductionWord" id="TraductionWord" placeholder="Traduction">
                   <label for="colorCard"></label>
-                  <input type="color" name="colorCard" id="colorCard"  >
+                  <input type="color" name="colorCard" id="colorCard">
                </fieldset>
             </div>
          </form>
@@ -45,7 +47,12 @@
                <div class="decoration_circle circle_top"></div>
                <div class="decoration_line"></div>
             </div>
-            <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, magnam sunt! Quae provident cumque molestiae, </p>
+            <div class="card_text">
+               <p id="card_text-p">
+                  Lorem dolor sit amet <span title="consecución" style="cursor:pointer">consectetur</span> adipisicing elit Laboriosam, magnam sunt! Quae provident cumquemolestiae
+               </p>
+            </div>
+
             <div class="card_decoration decoration-bottom">
                <div class="decoration_circle circle_bottom"></div>
                <div class="decoration_line"></div>
@@ -59,4 +66,5 @@
    </section>
    <script src="/script/creatorCard.js"></script>
 </body>
+
 </html>

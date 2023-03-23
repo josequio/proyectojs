@@ -163,14 +163,15 @@ div.card_decoration{
 
 .decoration-bottom{}
 
-p.card_text{
+div.card_text{
     height: 50%;
-    /* background-color: #ffde59; */
     display: inherit;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #ffde59; */
     max-width: 15.8rem;
     line-height: 160%;
+    text-align: center;
 }
 
 div.card_like{
