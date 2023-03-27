@@ -1,4 +1,4 @@
-const draggable = document.getElementById('draggable');
+/* const draggable = document.getElementById('draggable');
 const droppable = document.getElementById('droppable');
 
 draggable.addEventListener('dragstart', function(event) {
@@ -15,3 +15,22 @@ droppable.addEventListener('drop', function(event) {
   droppable.appendChild(draggableElement);
   event.dataTransfer.clearData();
 });
+
+*/
+let  inputText =  document.querySelector("#input_text");
+let inputColor = document.querySelector("#input_color");
+let text = inputText.value;
+let color = inputColor.value;
+
+inputText.addEventListener("input",function(ev){
+  let text = inputText.value;
+})
+console.log(text);
+
+
+
+inputColor.addEventListener("input",function(ev){
+  let color = inputColor.value;
+  
+})
+console.log(color);

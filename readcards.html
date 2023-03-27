@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="/styles/general_card.css">
+   <link rel="stylesheet" href="/styles/header.css">
+   <link rel="stylesheet" href="/styles/readcards.css">
+   <title>ChameleonSpeak.com</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="header_brand">
+         <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
+         <a href="/index.html" class="header_brand_name style_a">ChameleonSpeak</a>
+      </div>
+      <nav class="nav">
+         <ul class="nav_list style_ul">
+            <li class="nav_items "><a class="style_a" href="/readcards.html">READCARDS</a></li>
+            <li class="nav_items" id="speakcards_modal"><a class="style_a" href="">SPEAKCARDS</a></li>
+         </ul>
+      </nav>
+      <a href="#" class="header_btn_access style_a btn_white modal_open">Access</a>
+   </header>
+   <section class="readcards">
+      <!-- <div class="strip"></div> -->
+      <div class="readcards_container">
+         <!-- ------quiz---------- -->
+         <div class="readcards_quiz">
+            <form action="#" class="readcards_form">
+               <h2>Answer the cards' questions:</h2>
+               <fieldset>
+                  <legend>First Question?</legend>
+                  <label for="opcion1a">
+                     <input type="radio" name="questionOne" id="opcion1a" value="opcion1a">
+                     Opción 1
+                  </label>
+                  <label for="opcion2a">
+                     <input type="radio" name="questionOne" id="opcion2a" value="opcion2a">
+                     Opción 2
+                  </label>
+                  <label for="opcion3a">
+                     <input type="radio" name="questionOne" id="opcion3a" value="opcion3a">
+                     Opción 3
+                  </label>
+               </fieldset>
+               <fieldset>
+                  <legend>Second Question?</legend>
+                  <label for="opcion1b">
+                     <input type="radio" name="questionTwo" id="opcion1b" value="opcion1b">
+                     Opción 1
+                  </label>
+                  <label for="opcion2b">
+                     <input type="radio" name="questionTwo" id="opcion2b" value="opcion2b">
+                     Opción 2
+                  </label>
+                  <label for="opcion3b">
+                     <input type="radio" name="questionTwo" id="opcion3b" value="opcion3b">
+                     Opción 3
+                  </label>
+               </fieldset>
+               <fieldset>
+                  <legend>Third Question?</legend>
+                  <label for="opcion1c">
+                     <input type="radio" name="questionThree" id="opcion1c" value="opcion1c">
+                     Opción 1
+                  </label>
+                  <label for="opcion2c">
+                     <input type="radio" name="questionThree" id="opcion2c" value="opcion2c">
+                     Opción 2
+                  </label>
+                  <label for="opcion3c">
+                     <input type="radio" name="questionThree" id="opcion3c" value="opcion3c">
+                     Opción 3
+                  </label>
+               </fieldset>
+               <label for="check">
+                  <input type="button" name = "check" value="check">
+               </label>
+         
+            </form>
+         </div>
+         <!-- -----------------------card------------------- -->
+         <div class="readcards_card">
+
+            <h2>Previzualización</h2>
+            <div class="card card-previewer">
+               <div class="card_image">
+                  <img src="/images/logo/icon_logo.png" alt="imagen" id="cardImg">
+               </div>
+               <h2 class="card_title">Lorem ipsum dolor sit</h2>
+               <div class="card_decoration decoration-top">
+                  <div class="decoration_circle circle_top"></div>
+                  <div class="decoration_line"></div>
+               </div>
+               <div class="card_text">
+                  <p id="card_text-p">
+                     Lorem dolor sit amet <span title="consecución" style="cursor:pointer">consectetur</span>
+                     adipisicing elit Laboriosam, magnam sunt! Quae provident cumquemolestiae
+                  </p>
+               </div>
+
+               <div class="card_decoration decoration-bottom">
+                  <div class="decoration_circle circle_bottom"></div>
+                  <div class="decoration_line"></div>
+               </div>
+               <div class="card_like">
+                  <img src="/images/icons/pulgar-arriba.png" alt="">
+               </div>
+            </div>
+
+         </div>
+         <!-- ------------topics---------------s -->
+         <div class="readcards_topics">
+            <div class="topics_container">
+               <ul class="topics_lists style_ul">
+                  <li class="topics_item"><button class="topics_button btn_blue">My loyal fried</button></li>
+                  <li class="topics_item"><button class="topics_button btn_blue">My roker friend</button></li>
+                  <li class="topics_item"><button class="topics_button btn_blue">I like the beach</button></li>
+               </ul>
+            </div>
+         </div>
+
+      </div>
+   </section>
+</body>
+
+</html>

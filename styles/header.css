@@ -1,0 +1,115 @@
+/* ---------General Styles---------------  */
+:root{
+   --colorBlue: #004aad;
+   --colorYellow: hsl(46deg 98% 52%);
+   --colorWhite: rgb(255, 255, 255);
+   --colorBlack: rgb(0, 0, 0);
+}
+/* button blue and hover yellow */
+.btn_blue{
+    background-color: var(--colorBlue);
+    border-radius: 0.8rem;
+    color: var(--colorWhite);
+}
+.btn_blue:hover{
+    background-color: var(--colorYellow);
+    color: var(--colorBlack);
+}
+
+/* button yellow y hover blue*/
+.btn_yellow{
+    background-color: var(--colorYellow);
+    border-radius: 0.8rem;
+    color: var(--colorBlack);
+}
+.btn_yellow:hover{
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
+}
+/* button white*/
+.btn_white{
+    background-color: var(--colorWhite);
+    border-radius: 0.8rem;
+    color: var(--colorBlack);
+}
+/*----------section separation------------ */
+.divider{
+    max-width: 100vw;
+    min-height: 3.3rem;
+    height: 8vh;
+    background-color: black;
+}
+
+.strip{
+    max-width: 100vw;
+    min-height: 1.5rem;
+    background-color: var(--colorYellow);
+}
+/* -------------style: enlace y lista------- */
+.style_ul{
+    list-style: none;
+}
+.style_a{
+    text-decoration: none;
+    display: inline-block;
+}
+/*----------------------------------*/
+/* -------------------------------- */
+/* ----------header-and-- nav------------- */
+.header{
+    position: sticky;
+    top: 0;
+    background-color: var(--colorBlue);
+    min-height: 3.3rem;
+    height: 8vh;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 1;
+
+}
+
+.header_brand{
+    display: flex;
+    align-items: center;
+}
+
+.header_brand_img{}
+
+.header_brand_name{
+    color: var(--colorWhite);
+    font-size: 1.3rem;
+}
+
+.header_brand,
+.header_btn_access,
+.nav{
+    align-self: center;
+    justify-self: center;
+}
+
+.nav_list{
+    display: flex;
+    gap: 3rem;
+}
+
+.nav_items>a{
+    color: var(--colorWhite);
+}
+.nav_items{
+    padding: 0.3rem 1.5rem;
+}
+.nav_items:hover{
+    box-shadow: 0 0 10px rgb(255,255,255);
+    border-radius: 10px;
+    background-color: rgba(3, 89, 163, 0.817);
+}
+
+.header_btn_access{
+    padding: 0.3rem 1.5rem;
+}
+.header_btn_access:hover{
+    background-color: rgba(3, 89, 163, 0);
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}

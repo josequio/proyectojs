@@ -1,0 +1,94 @@
+
+
+div.readcards_card{
+    min-width: 320px;
+/*     background-color: aqua;
+ */ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card{
+    background-color: rgba(0, 0, 0, 0.975);
+    width: 375px;
+    min-width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: rgb(255,255,255);
+}
+
+
+
+div.card_image{
+    /* background-color: #004aad; */
+    width: 5rem;
+    height: 5rem;
+}
+div.card_image>img{
+    width: 100%;
+}
+
+h2.card_title{
+    font-size: 1rem;
+    /* background-color: antiquewhite; */
+}
+/*--*/
+div.card_decoration{
+    min-height: 2rem;
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.decoration_circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #004aad;
+    position: absolute;
+  }
+.circle_top{
+    left: 0.7rem;
+}
+.circle_bottom{
+    left: 16.2rem;
+}
+
+  .decoration_line{
+    width: 15.8rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;/*  */
+    background-color: #ffde59;
+    z-index: 1;
+  }
+/*----*/
+.decoration-top{}
+
+.decoration-bottom{}
+
+div.card_text{
+    height: 50%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #ffde59; */
+    max-width: 15.8rem;
+    line-height: 160%;
+    text-align: center;
+}
+
+div.card_like{
+    width: 40px;
+}
+div.card_like>img{
+    width: 100%;
+}

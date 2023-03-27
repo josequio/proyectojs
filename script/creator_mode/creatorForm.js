@@ -7,8 +7,10 @@ let inputTextareaCard = document.querySelector("#textareaCard");
 let inputImageCard = document.querySelector("#imageCard");
 let inputColorCard = document.querySelector("#colorCard");
 let inputWordsCard = document.querySelector("#wordsCard");
+
 let inputTraductionWord = document.querySelector("#TraductionWord");
-/* Evento para elemento input - titulo del card*/
+
+//Evento para elemento input - titulo del card
 
 inputTitleCard.addEventListener('input', function (ev) {
     /* console.log(inputTitleCard.value); *///se imprime el valor ingesado.
@@ -23,20 +25,18 @@ inputTitleCard.addEventListener('input', function (ev) {
 
 });  */
 
-/* Evento para elemento input - imagen de la card*/
-inputImageCard.addEventListener('input', function (ev) {
+// Evento para elemento input - imagen de la card
+/* inputImageCard.addEventListener('input', function (ev) {
     let image = ev.target.file[0];
     let reader = new FileReader();
     reader.readAsDataURL(image);
-    reader.onload = function () { /* onload: cuando finalice de caragr lo requeride en la variblae reader */
+    reader.onload = function () { // onload: cuando finalice de caragr lo requeride en la variblae reader 
         let cardImg = document.getElementById("cardImg");
         console.log(reader.result);
         cardImg.src = reader.result;
 
     }
-});
-
-
+});*/
 /* Evento para elemento input - palabra o frase y color*/
 
 /* inputWordsCard.addEventListener("input",function(ev){                                            
@@ -57,20 +57,26 @@ inputImageCard.addEventListener('input', function (ev) {
     });                
 }) */
 
+
+
 inputTextareaCard.addEventListener('input', function (ev) {
     //console.log(inputTextareaCard.value); //se imprime el valor ingesado.
     cardTextP.textContent = inputTextareaCard.value;
-    /* onsole.log(cardTextP.innerHTML); */
+    //onsole.log(cardTextP.innerHTML); 
     let contentText = cardTextP.innerHTML;
     inputWordsCard.addEventListener("input", function (ev) {
-        inputColorCard.addEventListener('input', function (ev) {
-            let contentUpdated = contentText.replace(inputWordsCard.value,`<span style= "color: ${inputColorCard.value}"> ${inputWordsCard.value} </span>`);
+        let contentUpdated = contentText.replace(inputWordsCard.value,`<span id = "spanColor"> ${inputWordsCard.value} </span>`);
             cardTextP.innerHTML = contentUpdated;
-        });
     })
 
-}); 
+});
 
-inputTraductionWord.addEventListener('input',function(){
+inputColorCard.addEventListener('input', function (ev) {
+    let spanColor = document.querySelector("#spanColor");
+    spanColor.style.color = inputColorCard.value;
+});
 
-})
+inputTraductionWord.addEventListener('input',function(ev){
+    let spanColor = document.querySelector("#spanColor");
+    spanColor.setAttribute('title',inputTraductionWord.value);
+});  

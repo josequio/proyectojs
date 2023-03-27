@@ -15,16 +15,16 @@ body{
     max-width: 100vw;
 
 }
-.header{ 
+/* .header{ 
     width: 100vw;
     min-height: 3.3rem;
     height: 8vh;
     background-color: #3131cef7;
-}
+} */
 /*-----------------------------------------------*/
 section.maker{
     height: 92vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(47, 255, 0, 0.228);
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +99,7 @@ div.card{
     background-color: rgba(0, 0, 0, 0.975);
     width: 375px;
     min-width: 320px;
-    min-height: 500px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */

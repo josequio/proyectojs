@@ -5,34 +5,49 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles/header.css">
    <link rel="stylesheet" href="/styles/creator_card.css">
    <title>ChameleonSpeak.com</title>
 </head>
 
 <body>
    <header class="header">
-
+      <div class="header_brand">
+         <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
+         <a href="/index.html" class="header_brand_name style_a" target="_blank">ChameleonSpeak</a>
+      </div>
+      <nav class="nav">
+         <ul class="nav_list style_ul">
+            <li class="nav_items "><a class="style_a" href="/cards.html">READCARDS</a></li>
+            <li class="nav_items" id="speakcards_modal"><a class="style_a" href="">SPEAKCARDS</a></li>
+         </ul>
+      </nav>
+      <a href="#" class="header_btn_access style_a btn_white modal_open">Access</a>
    </header>
    <section class="maker">
       <div class="maker_card">
          <h2>Creador</h2>
-         <form action="#" class="form" id="form">
+         <form action="#" method="post" class="form" id ="creatorForm">
             <label for="imageCard">Carga la imagen para la card:</label>
             <input type="file" name="imageCard" id="imageCard">
             <label for="titleCard">Ingresa el título de la card:</label>
-            <input type="text" name="titleCard" id="titleCard" class="input-desing">
+            <input type="text" name="titleCard" id="titleCard" class="input-desing" required>
             <label for="textareaCard">Ingresa el contenido de la card:</label>
-            <textarea id="textareaCard" name="textareaCard" rows="4" cols="50"></textarea>
+            <textarea id="textareaCard" name="textareaCard" rows="4" cols="50" required></textarea>
             <div class="form_marker">
                <label for="wordsCard">Ingresa la palabra o frase a resaltar:</label>
                <fieldset>
-                  <input type="text" name="wordsCard" id="wordsCard" class="input-desing">
+                  <input type="text" name="wordsCard" id="wordsCard" class="input-desing" required>
                   <label for="TraductionWord"></label>
-                  <input type="text" name="TraductionWord" id="TraductionWord" placeholder="Traduction">
+                  <input type="text" name="TraductionWord" id="TraductionWord" placeholder="Traduction" required>
                   <label for="colorCard"></label>
-                  <input type="color" name="colorCard" id="colorCard">
+                  <input type="color" name="colorCard" id="colorCard" required>
                </fieldset>
             </div>
+            <button>Agrega una ChameleonCard</button>
          </form>
       </div>
 
@@ -64,7 +79,6 @@
       </div>
 
    </section>
-   <script src="/script/creatorCard.js"></script>
-</body>
-
+   <script src="/script/creator_mode/creatorFirestore.js" type="module"></script>
+  <!--  <script src="/script/creator_mode/creatorForm.js" type="module"></script> -->
 </html>

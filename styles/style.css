@@ -272,7 +272,7 @@ body{
 }
 
 /*---------------section: screen-----------------------------------*/
-.screen{
+section.screen{
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -280,7 +280,7 @@ body{
   
 }
 
-.screen_container{
+div.screen_container{
     height: 100%;
     min-width: 100%;
     max-width: 100vw;
@@ -360,11 +360,40 @@ body{
     text-align: start;
 }
 
+/*-----------section:  readcards-----------------*/
+section.readcards{
+    min-height: 100vh;
+    width: 100%;
+}
+div.readcards_container{
+    margin: auto;
+    min-height: 100vh;
+    /* min-width: 100%; */
+    max-width: 80%;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: minmax(17rem,1fr) minmax(17rem,1fr);
+    grid-template-rows: 0.3fr 0.7fr;
+    grid-template-areas: "readcardsTopics readcardsCard "
+                         "readcardsQuiz readcardsCard ";
+}
+div.readcards_topics{
+   grid-area: readcardsTopics;
+}
+
+div.readcards_quiz{
+  grid-area: readcardsQuiz;
+}
+
+div.readcards_card{
+  grid-area: readcardsCard;
+}
+
 /*-----------section:  gift-----------------*/
-.gift{
+section.gift{
     min-height: 50vh;
 }
-.gift_container{
+div.gift_container{
 
 }
 
