@@ -6,5 +6,6 @@ export default {
   projectId: "camaleon-1dd65",
   storageBucket: "camaleon-1dd65.appspot.com",
   messagingSenderId: "864971661458",
-  appId: "1:864971661458:web:4aa93133a076aa513a064b"
+  appId: "1:864971661458:web:4aa93133a076aa513a064b",
+  storageBucket : "gs://camaleon-1dd65.appspot.com"
 };

@@ -7,7 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="styles/header.css">
    <link rel="stylesheet" href="/styles/creator_card.css">
    <title>ChameleonSpeak.com</title>
@@ -21,7 +22,7 @@
       </div>
       <nav class="nav">
          <ul class="nav_list style_ul">
-            <li class="nav_items "><a class="style_a" href="/cards.html">READCARDS</a></li>
+            <li class="nav_items "><a class="style_a" href="/readcards.html" target="_blank">READCARDS</a></li>
             <li class="nav_items" id="speakcards_modal"><a class="style_a" href="">SPEAKCARDS</a></li>
          </ul>
       </nav>
@@ -30,7 +31,7 @@
    <section class="maker">
       <div class="maker_card">
          <h2>Creador</h2>
-         <form action="#" method="post" class="form" id ="creatorForm">
+         <form action="#" method="post" class="form" id="creatorForm">
             <label for="imageCard">Carga la imagen para la card:</label>
             <input type="file" name="imageCard" id="imageCard">
             <label for="titleCard">Ingresa el título de la card:</label>
@@ -64,7 +65,8 @@
             </div>
             <div class="card_text">
                <p id="card_text-p">
-                  Lorem dolor sit amet <span title="consecución" style="cursor:pointer">consectetur</span> adipisicing elit Laboriosam, magnam sunt! Quae provident cumquemolestiae
+                  Lorem dolor sit amet <span title="consecución" style="cursor:pointer">consectetur</span> adipisicing
+                  elit Laboriosam, magnam sunt! Quae provident cumquemolestiae
                </p>
             </div>
 
@@ -77,8 +79,16 @@
             </div>
          </div>
       </div>
-
+   </section>
+  <!-- -----------------  -------------- -->
+   <section class="createdTopics">
+      <div class="createdTopics_container">
+         <ul class="createdTopics_ul style_ul" id="topics_ul">
+            
+         </ul>
+      </div>
    </section>
    <script src="/script/creator_mode/creatorFirestore.js" type="module"></script>
-  <!--  <script src="/script/creator_mode/creatorForm.js" type="module"></script> -->
+   <!--  <script src="/script/creator_mode/creatorForm.js" type="module"></script> -->
+
 </html>

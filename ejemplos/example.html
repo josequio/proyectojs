@@ -12,14 +12,35 @@
     </style>
 </head>
 <body>
+    <input type="file" id="file-input">
+    <img id="image-preview" src="">
+
+<script>
+  const fileInput = document.getElementById('file-input');
+  fileInput.addEventListener('change', function(event) {
+    handleImage(event);
+  });
+
+  function handleImage(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+      const imagePreview = document.getElementById('image-preview');
+      imagePreview.src = event.target.result;
+    };
+
+    reader.readAsDataURL(file);
+  }
+</script>
     <!-- <div id="draggable" draggable="true">Arrástrame</div>
     <div id="droppable">Suelta aquí</div> -->
-    <form action="#" id="form">
+    <!-- <form action="#" id="form">
         <input type="text" id="input_text">
         <button>agregar</button>
     </form>
     
     
-    <script src="/ejemplos/example.js"></script>
+    <script src="/ejemplos/example.js"></script> -->
 </body>
 </html>
