@@ -9,26 +9,37 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet">
-   <link rel="stylesheet" href="/styles/general_card.css">
    <link rel="stylesheet" href="/styles/header.css">
+   <link rel="stylesheet" href="/styles/general_card.css">
+   <!-- <link rel="stylesheet" href="/styles/modal.css"> -->
    <link rel="stylesheet" href="/styles/readcards.css">
    <title>ChameleonSpeak.com</title>
 </head>
 
 <body>
    <header class="header">
-      <div class="header_brand">
-         <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
-         <a href="/index.html" class="header_brand_name style_a">ChameleonSpeak</a>
+      <div class="header_mobile">
+         <div class="header_brand">
+            <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
+            <a href="/index.html" target="_blank" class="header_brand_name style_a">ChameleonSpeak</a>
+         </div>
+         <button class="btn_humbg"> <!-- nav hamburguesa -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="nav_svg"
+               viewBox="0 0 16 16">
+               <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+         </button>
       </div>
       <nav class="nav">
-         <ul class="nav_list style_ul">
-            <li class="nav_items "><a class="style_a" href="/readcards.html">READCARDS</a></li>
+         <ul class="nav_list style_ul activo">
+            <li class="nav_items "><a class="style_a" href="/readcards.html" target="_blank">READCARDS</a></li>
             <li class="nav_items" id="speakcards_modal"><a class="style_a" href="">SPEAKCARDS</a></li>
          </ul>
       </nav>
-      <a href="#" class="header_btn_access style_a btn_white modal_open">Access</a>
+      <a href="#" class="header_btn_access style_a btn_white modal_open activo">Access</a>
    </header>
+   <!-- --------------------------------------------section:readcards----------------------- -->
    <section class="readcards" id="readcards">
       <!-- <div class="strip"></div> -->
       <div class="readcards_container">
@@ -82,9 +93,9 @@
                   </label>
                </fieldset>
                <label for="check">
-                  <input type="button" name = "check" value="check">
+                  <input type="button" name="check" value="check">
                </label>
-         
+
             </form>
          </div>
          <!-- -----------------------card------------------- -->
@@ -102,7 +113,8 @@
                </div>
                <div class="card_text">
                   <p id="displayTextCard">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, debitis cupiditate omnis repudiandae reprehenderit nulla veritatis molestias beatae.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At, debitis cupiditate omnis repudiandae
+                     reprehenderit nulla veritatis molestias beatae.
                   </p>
                </div>
 
@@ -117,14 +129,31 @@
 
          </div>
    </section>
-    <!-- ------------topics---------------s -->
-    <section class="readcards_topics">
+   <!-- ------------topics---------------s -->
+   <section class="readcards_topics">
+      <h2>ChameleonCard creadas:</h2>
       <div class="topics_container" id="topics_container">
-         
+
       </div>
    </section>
-</div>
+
+   <!-- -----------------modal--------------- -->
+   <!-- <section class="modal">
+      <div class="modal_container">
+         <h2>Inicia Sesión y accede a las SPEAKCARDS</h2>
+         <button class="modal_google" id="googleLogin">
+            <div class="bg-white">
+               <img src="/images/icons/icons8-logo-de-google.svg" alt="icono de google">
+            </div>
+            <div>Iniciar sesión con Google</div>
+         </button>
+         <a href="#" class="modal_close" id="modal_close_readcards">cerrar</a>
+      </div>
+   </section> -->
+   
    <script src="/script/display_mode/display_firestore.js" type="module"></script>
+   <script src="/script/hamburguer.js"></script>
+ <!--   <script src="/script/modal.js"></script> -->
 </body>
 
 </html>

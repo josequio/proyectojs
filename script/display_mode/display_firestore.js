@@ -1,9 +1,8 @@
+/* import '../hamburguer.js' */
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js';
 import { getFirestore, addDoc, getDocs, collection, onSnapshot, serverTimestamp, orderBy, query } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js';
 
 import firebaseConfig from "../firebaseConfig.js";
-
-import { cardsObj } from './objeto.js'
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)

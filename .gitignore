@@ -1,3 +1,1 @@
-/ejemplosgit
-*.env
-*firebaseConfig.*
+/script/apikey.js

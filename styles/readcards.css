@@ -19,15 +19,15 @@ body{
 section.readcards{
     min-height: 100%;
     width: 100%;
-    background-color: antiquewhite;
-}
+/*     background-color: antiquewhite;
+ */}
 div.readcards_container{
     margin: auto;
     min-height: 92vh;
    /* min-width: 100%; */
     max-width: 80%;
-    background-color: rgba(127, 255, 212, 0.533);
-    display: grid;
+/*     background-color: rgba(127, 255, 212, 0.533);
+ */    display: grid;
     grid-template-columns: minmax(17rem,1fr) minmax(17rem,1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "readcardsQuiz readcardsCard ";
@@ -59,21 +59,25 @@ section.readcards_topics{
     /* padding: 1rem; */
    /*  align-self: center;
     justify-self: center; */
-    background-color: rgb(122, 122, 234);
-    width: 100%;
+/*     background-color: rgb(122, 122, 234);
+ */    width: 100%;
+       display:flex;
+       flex-direction: column;
+       align-items: center;
  }
 
 
 div.topics_container{
     min-height: 100vh;
     max-width: 80%;
-    background-color: bisque;
+    background-color: hsl(66, 100%, 92%);;
     margin: auto;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    border-radius: 20px;
 
 }
 
@@ -107,3 +111,16 @@ a.topics_button{
     padding: 0.5rem 1rem;
 }
  
+@media (max-width: 950px){
+    div.readcards_container{
+        margin: auto;
+        min-height: 92vh;
+       /* min-width: 100%; */
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: minmax(17rem,1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "readcardsCard" 
+                             "readcardsQuiz";
+    }
+}

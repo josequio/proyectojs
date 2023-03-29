@@ -65,8 +65,7 @@
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    z-index: 1;
-
+    z-index: 99;
 }
 
 .header_brand{
@@ -112,4 +111,59 @@
     background-color: rgba(3, 89, 163, 0);
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
+}
+/*button hamburguer*/
+.btn_humbg{
+    display: none;
+ }
+
+
+
+/*-------------------media querys ---------------*/
+
+ @media (max-width: 768px){
+    /*--------header-y nav------------*/
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 1rem;
+        height: 100%;
+        gap: 0.5rem; 
+    }
+    .header_brand{
+        justify-self: self-start;
+    }
+    .header_btn_access{
+        margin-bottom: 0.5rem;
+    }
+    /*----------------*/
+    .header_mobile{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .nav>.nav_list{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .nav_list.activo,
+    .header_btn_access.activo{
+        display: none;
+    }
+    /*-----hamburguer-----*/
+    .btn_humbg{
+        display: block;
+    }
 }

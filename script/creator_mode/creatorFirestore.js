@@ -1,21 +1,15 @@
 import './creatorForm.js'
+/* import '../hamburguer.js' */
+/* import './storageimg.js'; */
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js';
 import { getFirestore, addDoc, getDocs, collection, onSnapshot, serverTimestamp, orderBy, query } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js';
 
-import {getStorage, ref } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-storage.js"
 
 import firebaseConfig from "../firebaseConfig.js";
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-/* const storage = getStorage(app);
-const storageRef = ref(storage); */
-/* console.log(app);
-console.log(db); */
 
-//----------codigo para subir una imagen a storage de firebase----------------------
-/* const inputImageCard = document.querySelector("#imageCard").file[0];
-console.log(inputImageCard); */
 
 
 //---------------------------------------------------------------------
@@ -28,12 +22,12 @@ let inputTextareaCard = document.querySelector("#textareaCard");
 let inputColorCard = document.querySelector("#colorCard");
 let inputWordsCard = document.querySelector("#wordsCard");
 let inputTraductionWord = document.querySelector("#TraductionWord");
-let inputImageCard = document.querySelector("#imageCard");
 
-formCreator.addEventListener("submit", function (ev) {
+
+formCreator.addEventListener("submit", function (ev){
     ev.preventDefault();
     addDoc(collection(db, "card"), { title: inputTitleCard.value, textarea: inputTextareaCard.value, word: inputWordsCard.value, traduction: inputTraductionWord.value, color: inputColorCard.value, createAt: serverTimestamp() });
-    formCreator.reset();
+   /*  formCreator.reset(); */
 })
 
 let ulTopicsContainer = document.querySelector("#topics_ul");

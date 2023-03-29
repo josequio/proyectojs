@@ -11,22 +11,31 @@
       rel="stylesheet">
    <link rel="stylesheet" href="styles/header.css">
    <link rel="stylesheet" href="/styles/creator_card.css">
+   <!-- <link rel="stylesheet" href="/styles/modal.css"> -->
    <title>ChameleonSpeak.com</title>
 </head>
 
 <body>
    <header class="header">
-      <div class="header_brand">
-         <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
-         <a href="/index.html" class="header_brand_name style_a" target="_blank">ChameleonSpeak</a>
+      <div class="header_mobile">
+         <div class="header_brand">
+            <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
+            <a href="/index.html" target="_blank" class="header_brand_name style_a">ChameleonSpeak</a>
+         </div>
+         <button class="btn_humbg"> <!-- nav hamburguesa -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="nav_svg" viewBox="0 0 16 16">
+               <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+         </button>
       </div>
       <nav class="nav">
-         <ul class="nav_list style_ul">
+         <ul class="nav_list style_ul activo">
             <li class="nav_items "><a class="style_a" href="/readcards.html" target="_blank">READCARDS</a></li>
             <li class="nav_items" id="speakcards_modal"><a class="style_a" href="">SPEAKCARDS</a></li>
          </ul>
       </nav>
-      <a href="#" class="header_btn_access style_a btn_white modal_open">Access</a>
+      <a href="#" class="header_btn_access style_a btn_white modal_open activo">Access</a>
    </header>
    <section class="maker">
       <div class="maker_card">
@@ -48,7 +57,9 @@
                   <input type="color" name="colorCard" id="colorCard" required>
                </fieldset>
             </div>
-            <button>Agrega una ChameleonCard</button>
+            <div style="display:flex; justify-content: center; align-items: center; width: 100%;">
+               <button class="btn_blue" style="padding: 0.5rem; cursor: pointer; border: none;">Agrega una ChameleonCard</button>
+            </div>
          </form>
       </div>
 
@@ -83,12 +94,28 @@
   <!-- -----------------  -------------- -->
    <section class="createdTopics">
       <div class="createdTopics_container">
+         <h2>Documentos creados (Cards):</h2>
          <ul class="createdTopics_ul style_ul" id="topics_ul">
             
          </ul>
       </div>
    </section>
+   <!-- -----------------modal--------------- -->
+  <!--  <section class="modal">
+      <div class="modal_container">
+         <h2>Inicia Sesión y accede a las SPEAKCARDS</h2>
+         <button class="modal_google" id="googleLogin">
+            <div class="bg-white">
+               <img src="/images/icons/icons8-logo-de-google.svg" alt="icono de google">
+            </div>
+            <div>Iniciar sesión con Google</div>
+         </button>
+         <a href="#" class="modal_close" id="modal_close">cerrar</a>
+      </div>
+   </section> -->
    <script src="/script/creator_mode/creatorFirestore.js" type="module"></script>
    <!--  <script src="/script/creator_mode/creatorForm.js" type="module"></script> -->
+   <script src="/script/hamburguer.js"></script>
+   <script src="/script/modal.js"></script>
 
 </html>

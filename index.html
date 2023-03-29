@@ -20,17 +20,25 @@
    <div class="container">
       <!-- ------------------header--------- -->
       <header class="header">
-         <div class="header_brand">
-            <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
-            <a href="#" class="header_brand_name style_a">ChameleonSpeak</a>
+         <div class="header_mobile">
+            <div class="header_brand">
+               <img width="55px" src="/images/logo/icon_logo.png" alt="icono ChameleonSpeak" class="header_brand_img">
+               <a href="#" class="header_brand_name style_a">ChameleonSpeak</a>
+            </div>
+            <button class="btn_humbg"> <!-- nav hamburguesa -->
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="nav_svg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+               </svg>
+            </button>
          </div>
          <nav class="nav">
-            <ul class="nav_list style_ul">
+            <ul class="nav_list style_ul activo">
                <li class="nav_items "><a class="style_a" href="/readcards.html" target="_blank">READCARDS</a></li>
                <li class="nav_items" id="speakcards_modal"><a class="style_a" href="">SPEAKCARDS</a></li>
             </ul>
          </nav>
-         <a href="#" class="header_btn_access style_a btn_white modal_open">Access</a>
+         <a href="#" class="header_btn_access style_a btn_white modal_open activo">Access</a>
       </header>
       <!-- -------------------main----------- -->
       <main class="main">
@@ -38,7 +46,7 @@
          <section class="front">
             <div class="front_top">
                <h1 class="front_top_h1">Complementa tu aprendizaje de inglés en ChameleonSpeak.com</h1>
-               <a href="#" class="front_top_btn btn_yellow style_a">Comienza hoy!</a>
+               <a href="#method" class="front_top_btn btn_yellow style_a">Comienza hoy!</a>
             </div>
             <div class="front_bottom">
                <h2 class="front_bottom_h2">Nunca dejes de crecer</h2>
@@ -47,7 +55,7 @@
          </section>
 
          <!-- --------section: method-------- -->
-         <section class="method">
+         <section class="method" id="method">
             <div class="divider"></div>
             <div class="strip"></div>
             <div class="method_container">
@@ -107,7 +115,7 @@
             </div>
          </section>
          <!-- ------section: readcards ------------>
-         <section class="readcards">
+         <!-- <section class="readcards">
             <div class="divider"></div>
             <div class="strip"></div>
             <div class="readcards_container">
@@ -121,7 +129,7 @@
 
                </div>
             </div>
-         </section>
+         </section> -->
          <!-- --------section: gift---------------->
          <section class="gift">
             <div class="divider"></div>
@@ -135,9 +143,10 @@
       <!-- --------------------footer-------- -->
       <footer class="footer">
          <div class="footer_container">
-
+            <div class="footer_copy">Cpyright © 2022 José Gabriel Quio Sanchez Todos los derechos Reservados</div>
          </div>
       </footer>
+      <!-- -----------------modal--------------- -->
       <section class="modal">
          <div class="modal_container">
             <h2>Inicia Sesión y accede a las SPEAKCARDS</h2>
@@ -147,11 +156,13 @@
                </div>
                <div>Iniciar sesión con Google</div>
             </button>
-            <a href="#" class="modal_close">cerrar</a>
+            <a href="/creator_card.html" class="btn_blue style_a" style="padding: 0.5rem;">Ingresa a modo creador</a>
+            <a href="#" class="modal_close" id="modal_close">cerrar</a>
          </div>
       </section>
    </div>
 </body>
-<script src="/script/main.js" type="module"></script>
+<script src="/script/modal.js"></script>
+<script src="/script/hamburguer.js"></script>
 <!-- <script src="/script/firebase.js" type="module"></script> -->
 </html>
