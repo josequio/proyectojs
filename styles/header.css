@@ -71,6 +71,7 @@
 .header_brand{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header_brand_img{}
