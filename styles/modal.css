@@ -1,3 +1,4 @@
+.modal_idea,
 .modal{
     padding: 1rem;
     position: fixed;
@@ -22,11 +23,12 @@
     transition: opacity 0.6s;
     --transform: translateY(0);
 }
+.modal_container_idea,
 .modal_container{
     margin: auto;
     max-width: 20rem;
     max-height: 90%;
-    min-height:70%;
+    min-height:auto;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -43,6 +45,7 @@
     text-align: center;
 }
 
+a.modal_close_idea,
 a.modal_close{
     cursor: pointer;
     padding: 0.2rem 1rem;
@@ -50,6 +53,7 @@ a.modal_close{
     background-color: #4caf50;;
     color: var(--color-bg-white);
 }
+a.modal_close_idea:hover,
 a.modal_close:hover{
     cursor: pointer;
     text-decoration: none;
@@ -82,4 +86,32 @@ button.modal_google div:nth-child(2){
 .bg-white{
     background-color: var(--color-bg-white);
 }
+
+.building{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.building_p_bottom,
+.building_p{
+    text-align: center;
+}
+
+.building_images{
+
+}
+
+/*---------form modal idea----------*/
+.form_idea{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.submit_idea{
+  cursor: pointer;
+}
+
 

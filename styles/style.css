@@ -125,6 +125,13 @@ body{
     border-radius: 10px;
     background-color: rgba(3, 89, 163, 0.817);
 }
+/*-------*/
+.container_header_btn_access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
 
 .header_btn_access{
     padding: 0.3rem 1.5rem;
@@ -134,6 +141,15 @@ body{
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
 }
+.header_btn_idea{
+    width: 2rem;
+    height: 2rem;
+}
+.header_btn_idea>img{
+    width: 100%;
+}
+
+
 /*button hamburguer*/
 .btn_humbg{
     display: none;
@@ -448,7 +464,7 @@ div.gift_container{
         justify-self: self-start;
     }
     .header_btn_access{
-        margin-bottom: 0.5rem;
+        /* margin-bottom: 0.5rem; */
     }
     /*----------------*/
     .header_mobile{
@@ -474,6 +490,20 @@ div.gift_container{
     .header_btn_access.activo{
         display: none;
     }
+
+    .container_header_btn_access{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    .header_btn_idea{
+    }
+    .header_btn_idea.activo{
+       position: absolute;
+    }
+   
+
     /*-----hamburguer-----*/
     .btn_humbg{
         display: block;

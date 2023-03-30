@@ -38,7 +38,14 @@
                <li class="nav_items" id="speakcards_modal"><a class="style_a" href="">SPEAKCARDS</a></li>
             </ul>
          </nav>
-         <a href="#" class="header_btn_access style_a btn_white modal_open activo">Access</a>
+         <div class="container_header_btn_access">
+            <a href="#" class="header_btn_access style_a btn_white modal_open activo">Access</a>
+            <a href="#" class="header_btn_idea style_a btn_white modal_open activo disp_login">
+               <img src="/images/icons/iconidea.png" alt="">
+            </a>
+            <a href="/creator_card.html" target="_blank" class="style_a btn_white activo disp_logout">Creator Mode</a>
+            <a href="#" id="logout" class="style_a btn_white activo disp_logout">Logout</a>
+         </div>
       </header>
       <!-- -------------------main----------- -->
       <main class="main">
@@ -156,13 +163,35 @@
                </div>
                <div>Iniciar sesión con Google</div>
             </button>
-            <a href="/creator_card.html" class="btn_blue style_a" style="padding: 0.5rem;">Ingresa a modo creador</a>
+            <div class="building">
+               <p class="building_p"> Estamos trabajando para darle la mejor experiencia en la navegación de esta página <br> *(in maintenance)</p>
+               <div class="building_images">
+                  <img src="/images/modal/builder.png" alt="">
+                  <img src="/images/modal/dev.gif" alt="">
+               </div>
+               <p class="building_p_bottom">Ten un feliz dia y disfruta de las <br> READCARDS</p>
+            </div>
             <a href="#" class="modal_close" id="modal_close">cerrar</a>
          </div>
       </section>
+      <!-- -----------------modal-idea-------------- -->
+      <section class="modal_idea">
+         <div class="modal_container_idea">
+            <p>Creator Mode</p>
+            <form action="#" method="post" class="form_idea" id="form_idea">
+               <label for="email">Email:</label>
+               <input type="email" name="email" id="email" required>
+               <label for="password">Password:</label>
+               <input type="password" name="password" id="password" required>
+               <button class="submit_idea btn_blue">log in</button>
+            </form>
+            <a href="#" class="modal_close_idea" id="modal_close_idea">cerrar</a>
+         </div>
+      </section>
+
    </div>
 </body>
+<script src="/main.js" type="module"></script>
 <script src="/script/modal.js"></script>
 <script src="/script/hamburguer.js"></script>
-<!-- <script src="/script/firebase.js" type="module"></script> -->
 </html>
