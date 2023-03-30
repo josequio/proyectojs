@@ -12,6 +12,7 @@ form_idea.addEventListener('submit', async ev => {
     try{
         const credentials = await signInWithEmailAndPassword(auth, email, password);
         console.log(credentials);
+        window.location.href = "index.html"
     }catch(error){
         /* console.log(error.message);
         console.log(error.code); */
@@ -23,7 +24,7 @@ form_idea.addEventListener('submit', async ev => {
             alert('Something went wrong');
         }
     }
-
+    
 })
 /* 
 time 1.21 */

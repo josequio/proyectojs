@@ -149,7 +149,12 @@ body{
     width: 100%;
 }
 
-
+a.btn_creator,
+a.logout{
+    padding: 0.2rem ;
+    min-width: 5rem;
+    text-align: center;
+}
 /*button hamburguer*/
 .btn_humbg{
     display: none;
@@ -197,7 +202,15 @@ body{
 
 .front_bottom_h2{}
 
-.front_bottom_js{}
+.front_bottom_js{
+    font-size: 1.1rem;
+    background-color: aliceblue;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    min-width: 10rem;
+    border-radius: 10px;
+}
 
 /*------------------section: method-------------------*/
 .method{
@@ -463,8 +476,10 @@ div.gift_container{
     .header_brand{
         justify-self: self-start;
     }
-    .header_btn_access{
+    .container_header_btn_access{
         /* margin-bottom: 0.5rem; */
+        display: flex;
+        flex-direction: column;
     }
     /*----------------*/
     .header_mobile{
@@ -489,6 +504,10 @@ div.gift_container{
     .nav_list.activo,
     .header_btn_access.activo{
         display: none;
+    }
+    a.btn_creator.activo,
+    a.logout.activo{
+        display: none
     }
 
     .container_header_btn_access{

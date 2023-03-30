@@ -4,12 +4,21 @@ import './creatorForm.js'
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js';
 import { getFirestore, addDoc, getDocs, collection, onSnapshot, serverTimestamp, orderBy, query } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js';
 
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"
+/* import './script/firebase.js'; */
+import { auth } from "../firebase.js";
 
+import '../logout.js';
 import firebaseConfig from "../firebaseConfig.js";
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-
+/*------------------si no esta autenticado se sale de la página protegida-------------- */
+onAuthStateChanged(auth, async (user) => {
+    if(!user){
+        window.location.href = "index.html";
+    }
+})
 
 
 //---------------------------------------------------------------------
@@ -28,6 +37,7 @@ formCreator.addEventListener("submit", function (ev){
     ev.preventDefault();
     addDoc(collection(db, "card"), { title: inputTitleCard.value, textarea: inputTextareaCard.value, word: inputWordsCard.value, traduction: inputTraductionWord.value, color: inputColorCard.value, createAt: serverTimestamp() });
    /*  formCreator.reset(); */
+   
 })
 
 let ulTopicsContainer = document.querySelector("#topics_ul");

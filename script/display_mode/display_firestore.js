@@ -74,7 +74,12 @@ onSnapshot(queryCards, function (querySnapshot) {
                <img src="/images/icons/pulgar-arriba.png" alt="">
             </div>
         </div>
-        <a class = "topics_button btn_blue style_a" href="#readcards">Listo para un reto!</a>
+        <div style = "display:flex; flex-direction:column; aling-items:center; justify-content:center;">
+            <a class = "topics_button btn_blue style_a" href="#readcards">Listo para un reto!</a>
+            <p>Puedes dejar tu respuesta aqui:</p>
+            <a class = "topics_button style_a" href="https://www.facebook.com/profile.php?  id=100089940139227"><img src="/images/icons/face.png" alt=""></a>
+        <div>
+
         `;
         if (document.startViewTransition) {
             document.startViewTransition(() => {

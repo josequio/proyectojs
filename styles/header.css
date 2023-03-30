@@ -105,6 +105,12 @@
     background-color: rgba(3, 89, 163, 0.817);
 }
 
+.container_header_btn_access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 .header_btn_access{
     padding: 0.3rem 1.5rem;
 }
@@ -112,6 +118,12 @@
     background-color: rgba(3, 89, 163, 0);
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
+}
+
+a.logout{
+    padding: 0.2rem ;
+    min-width: 5rem;
+    text-align: center;
 }
 /*button hamburguer*/
 .btn_humbg{
@@ -161,6 +173,10 @@
 
     .nav_list.activo,
     .header_btn_access.activo{
+        display: none;
+    }
+    .btn_creator.activo,
+    .logout.activo{
         display: none;
     }
     /*-----hamburguer-----*/
