@@ -1,0 +1,22 @@
+{
+  "name": "proyecto_web_js",
+  "version": "1.0.0",
+  "description": "page app web",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josequio/proyectojs.git"
+  },
+  "author": "José Gabriel Quio Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josequio/proyectojs/issues"
+  },
+  "homepage": "https://github.com/josequio/proyectojs#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
