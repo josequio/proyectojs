@@ -4,8 +4,8 @@
 const nav_list = document.querySelector('.nav_list');
 const header_btn_access = document.querySelector('.header_btn_access');
 const btn_humbg = document.querySelector('.btn_humbg');
-const btn_creator = document.querySelector('#btn_creator');
-const logout = document.querySelector('#logout');
+const btn_creator = document.querySelector('.btn_creator');
+const logout = document.querySelector('.logout');
 
 
     

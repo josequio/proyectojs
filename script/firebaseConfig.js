@@ -3,9 +3,9 @@ import { firestore_api_key } from './apikey.js';
 // Your web app's Firebase configuration
 export default {
   apiKey:firestore_api_key,
-  authDomain: "camaleon-1dd65.firebaseapp.com",
-  projectId: "camaleon-1dd65",
-  storageBucket: "camaleon-1dd65.appspot.com",
-  messagingSenderId: "864971661458",
-  appId: "1:864971661458:web:4aa93133a076aa513a064b"
+  authDomain: "chameleon-fabf9.firebaseapp.com",
+  projectId: "chameleon-fabf9",
+  storageBucket: "chameleon-fabf9.appspot.com",
+  messagingSenderId: "244023651635",
+  appId: "1:244023651635:web:c29dbeb020358a7e2a2246"
 };
